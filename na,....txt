@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+ double n1, n2, n3;
+ int positiveCount = 0, negativeCount = 0;
+ double average;
+ cout << "please enter three number: ";
+ cin >> n1 >> n2 >> n3;
+ if (n1 > 0) positiveCount++;
+ if (n2 > 0) positiveCount++;
+ if (n3 > 0) positiveCount++;
+ if (n1 < 0) negativeCount++;
+ if (n2 < 0) negativeCount++;
+ if (n3 < 0) negativeCount++;
+ average = (n1 + n2 + n3) / 3;
+ cout << "nmber of positive numbers: " << positiveCount << endl;
+ cout << " nmber of negative numbers: " << negativeCount << endl;
+ cout << " average: " << average << endl;
+ return 0;
+}
